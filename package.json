@@ -22,9 +22,14 @@
     "node": ">=10"
   },
   "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contract-loader": "^0.6.1",
+    "@truffle/contract": "^4.2.24",
+    "@truffle/hdwallet-provider": "^1.1.0",
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
     "ethereum-waffle": "^2.4.1",
     "ethereumjs-util": "^6.2.0",
     "mocha": "^6.2.2",
@@ -44,5 +49,9 @@
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "keccak256": "^1.0.0"
+  }
 }
